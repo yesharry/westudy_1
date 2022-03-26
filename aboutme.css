@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.top {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.top_menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_text {
+    color: #17132E;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu_text:hover {
+    color: #FFC900;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: expand .8s ease forwards;
+    background-color: #FFC900;
+    position: relative;
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(100%); /* x축으로 흰배경 100%에서 시작 */
+    }
+    100% {
+        transform: translateX(0); /* 노란배경이 100% 된다 */
+    }
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* 가로 정렬 - 요소 주위 동일한 간격 두기 */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+img {
+    width: 250px;
+    height: 450px;
+    display: block;
+}
+
+.text {
+    color: #FFC900;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.text:hover {
+    color: #FFC900;
+}
+
+.overlay {
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #FFC900;
+    text-decoration: solid;
+}
+
+.cont_1 {
+    width: 250px;
+    height: 450px;
+    background-color: #17132E;
+    display: flex;
+    align-items: center; /* 가운데 정렬 (세로) */
+    justify-content: center; /* 가운데 정렬 (가로) */
+}
+
+.cont_1:hover .overlay {
+    opacity: 1;
+    background-image: url(IMG_3378.jpg);
+    background-size: 250px 450px;
+}
+
+.cont_2 {
+    width: 250px;
+    height: 450px;
+    color: white;
+    background-color: #17132E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont_2:hover .overlay {
+    opacity: 1;
+    background-image: url(IMG_3417.jpg);
+    background-size: 250px 450px;
+}
+
+.cont_3 {
+    width: 250px;
+    height: 450px;
+    color: white;
+    background-color: #17132E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont_3:hover .overlay {
+    opacity: 1;
+    background-image: url(IMG_3738.jpg);
+    background-size: 250px 450px;
+}

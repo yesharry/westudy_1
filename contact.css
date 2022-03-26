@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.top {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.top_menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_text {
+    color: #17132E;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu_text:hover {
+    color: #FFC900;
+}
+
+h1 { /* 이걸 밑에 아이콘 안 건드리고 위로 올리고 싶은데 어떻게 해야하지 머리가 안 돌아간다ㅠ */
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #17132E;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    animation: expand .8s ease forwards;
+    background-color: #FFC900;
+    position: relative;
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(-100%); /* '-'는 X축 반대로! */
+    }
+    100% {
+        transform: translateX(-0%);
+    }
+}
+
+.cont_me {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #17132E;
+}
+
+img {
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.text:hover {
+    color: #FFC900;
+}
+
+.overlay {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #17132E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gith {
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gith:hover .overlay {
+    opacity: 1;
+}
+
+.email {
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email:hover .overlay {
+    opacity: 1;
+}
+
+.insta {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta:hover .overlay {
+    opacity: 1;
+}
